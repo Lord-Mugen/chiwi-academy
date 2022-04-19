@@ -1,0 +1,25 @@
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    background-color: #006A86;
+}
+
+
+.navbar-logo{
+    color: #FF7509;
+}
+
+
+.icon-person{
+    color: #FF7509;
+    width: 2em;
+    height: 2em;
+}
+
+.icon-exit{
+    color: #FF7509;
+    width: 2em;
+    height: 2em;
+}
