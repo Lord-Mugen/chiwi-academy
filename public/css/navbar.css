@@ -23,9 +23,70 @@
     color: #FF7509;
     width: 2em;
     height: 2em;
+    padding-left: 1em;
 }
 
 
 @media (min-width: 768px) {
+    .navbar{
+        height: 5em;
+    }
+
+    .navbar-logo{
+        font-size: 2em;
+    }
+
+    .icon-person{
+        width: 3em;
+        height: 3em;
+    }
     
+    .icon-exit{
+        width: 3em;
+        height: 3em;
+    }
+}
+
+@media (min-width: 992px) {
+    .navbar{
+        height: 8em;
+    }
+
+    .navbar-logo{
+        font-size: 2.7em;
+    }
+
+    .icon-person{
+        width: 4em;
+        height: 4em;
+    }
+    
+    .icon-exit{
+        width: 4em;
+        height: 4em;
+        padding-left: 2em;
+    }
+}
+
+@media (min-width: 1200px) {
+    
+    
+    .navbar{
+        height: 8em;
+    }
+
+    .navbar-logo{
+        font-size: 2.7em;
+    }
+
+    .icon-person{
+        width: 4em;
+        height: 4em;
+    }
+    
+    .icon-exit{
+        width: 4em;
+        height: 4em;
+        padding-left: 2em;
+    }
 }
