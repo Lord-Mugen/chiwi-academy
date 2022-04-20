@@ -1,0 +1,78 @@
+:root{
+    --main-font-1: "Fredoka One"
+}
+
+body{
+    background: #006A86;
+    font-family: var(--main-font-1);
+    
+}
+
+.container{
+    margin-top: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    /* border: red solid 2px; */
+
+}
+
+h1{
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+    color: #FF7509;
+    font-size: 2.5rem;
+}
+
+.formulario{
+    /* display: flex;
+    justify-content: center; */
+    /* gap: 2rem; */
+    padding: 6px;
+    
+}
+
+
+.textmail{
+    color: white;
+    font-size: 1.5rem;
+    /* margin-left: 53px; */
+}
+
+
+input{
+    
+    border-style: none;
+    border-radius: 30px;
+    height: 30px;
+    width: 300px;
+    background: #c4c4c470;
+}
+
+   
+
+h3{
+    color: white;
+    font-size: 1.6rem;
+    display: flex;
+    justify-content: center;
+}
+
+
+.button{
+    
+    background: #FF7509;
+    margin-top: 14px;
+    font-size: 1rem;
+    width: 100px;
+    height: 40px;
+    border-radius: 30px;
+    border-style: none;
+    color: white;
+    font-family: var(--main-font-1);
+    
+   
+}
