@@ -1,3 +1,8 @@
+*{
+    margin: 0;
+    border: 0;
+    padding: 0;
+}
 
 .navbar{
     display: flex;
@@ -7,25 +12,30 @@
     background-color: #006A86;
 }
 
+.navbar-logo-link{
+    text-decoration: none;
+}
 
 .navbar-logo{
     color: #FF7509;
     font-family: 'Fredoka One', cursive;
     font-weight: 100;
+    padding: 1em 1em;
 }
-
 
 .icon-person{
     color: #FF7509;
     width: 2em;
     height: 2em;
+    padding: 1em 1em;
+
 }
 
 .icon-exit{
     color: #FF7509;
     width: 2em;
     height: 2em;
-    padding-left: 1em;
+    padding: 1em 1em;
 }
 
 
