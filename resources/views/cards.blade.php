@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>homepage - cards</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+<link rel="stylesheet" href="css/app.css">
 
 </head>
 <body>
@@ -80,7 +81,7 @@ La idea central del método es muy simple y el material de fácil acceso utiliza
                     <!-- Cards 3 -->
                     <div class="col-md-4 col-12 justify-content-center mb-5">
                         <div class="card m-auto" style="width: 18rem;">
-                            <img class="card-img-top" src="{{asset('images/3.png')}}" alt="Eventos">
+                            <img class="card-img-top" src="{{asset('images/Senseida-y-cloudappi.jpg')}}" alt="Eventos">
                             <div class="card-body">
                                 <small class="card-txt-category">Categoría: Webinar</small>
                                 <h5 class="card-title my-2">Aprende Python en un dos tres</h5>
