@@ -29,7 +29,7 @@
                 <div class="row">
                     <!-- Cards 1 -->
                     <div class="col-md-4 col-12 justify-content-center mb-5">
-                        <div class="card m-auto" style="width: 18rem;">
+                        <div class="card m-auto" style="width: 18rem; height: 40rem;">
                             <img class="card-img-top" src="{{asset('images/metodo kanban.png')}}" alt="Eventos">
                             <div class="card-body">
                                 <small class="card-txt-category">Categoría: Talleres</small>
@@ -54,7 +54,7 @@ La idea central del método es muy simple y el material de fácil acceso utiliza
                     </div>
                     <!-- Cards  2 -->
                     <div class="col-md-4 col-12 justify-content-center mb-5">
-                        <div class="card m-auto" style="width: 18rem;">
+                        <div class="card m-auto" style="width: 18rem; height: 40rem;">
                             <img class="card-img-top" src="{{asset('images/masterclasdanielatobarportada.jpg')}}" alt="Eventos">
                             <div class="card-body">
                                 <small class="card-txt-category">Categoría: Masterclass</small>
@@ -80,7 +80,7 @@ La idea central del método es muy simple y el material de fácil acceso utiliza
                     </div>
                     <!-- Cards 3 -->
                     <div class="col-md-4 col-12 justify-content-center mb-5">
-                        <div class="card m-auto" style="width: 18rem;">
+                        <div class="card m-auto" style="width: 18rem; height: 40rem;">
                             <img class="card-img-top" src="{{asset('images/Senseida-y-cloudappi.jpg')}}" alt="Eventos">
                             <div class="card-body">
                                 <small class="card-txt-category">Categoría: Webinar</small>

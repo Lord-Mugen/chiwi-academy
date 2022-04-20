@@ -37,6 +37,11 @@ hr {
   font-size: 14px;
 }
 
+.card-img-top {
+  min-height: 200px;
+  min-width: 200px;
+}
+
 .card {
   box-shadow: 1px 1px 5px 1px rgba(0, 0, 0, 0.2);
   border-radius: 1.25rem;
