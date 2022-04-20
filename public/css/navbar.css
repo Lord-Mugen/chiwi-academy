@@ -10,6 +10,8 @@
 
 .navbar-logo{
     color: #FF7509;
+    font-family: 'Fredoka One', cursive;
+    font-weight: 100;
 }
 
 
@@ -49,7 +51,7 @@
 
 @media (min-width: 992px) {
     .navbar{
-        height: 8em;
+        height: 6em;
     }
 
     .navbar-logo{
@@ -72,7 +74,7 @@
     
     
     .navbar{
-        height: 8em;
+        height: 6em;
     }
 
     .navbar-logo{
