@@ -18,7 +18,6 @@ Route::get('/', function () {
 });
 
 
-Route::get('student', function () {
-    /* return view('welcome'); */
-    return "Bienvenido a la vista de estudiante";
+Route::get('/student', function () {
+    return view("student.student");
 });
