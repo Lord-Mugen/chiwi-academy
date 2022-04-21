@@ -37,11 +37,13 @@
                             <div class=" mb-3">
                                 <label for="validationTextarea" class="form-label">Create an Event</label>
                             </div>
-                            <textarea class="text-admin form-control is-invalid" id="validationTextarea" placeholder="Title" required></textarea>
-                            <textarea class="text-admin form-control is-invalid" id="validationTextarea" placeholder="Date" required></textarea>
-                            <textarea class="text-admin form-control is-invalid" id="validationTextarea" placeholder="Participants" required></textarea>
-                            <textarea class="text-admin form-control is-invalid" id="validationTextarea" placeholder="Description" required></textarea>
-                            <input type="file" class="form-control" aria-label="file example" required>
+                            <textarea class="text-admin form-control is-invalid" id="validationTextarea" name="title" placeholder="Title" required></textarea>
+                            <label for="timeMeet"></label>
+                            <input class type="datetime-local" name="timeMeet" required>
+                            <!-- <textarea class="text-admin form-control is-invalid" id="validationTextarea" name="timeMeet" placeholder="Date" required></textarea> -->
+                            <textarea class="text-admin form-control is-invalid" id="validationTextarea" name="maxCupos" placeholder="Participants" required></textarea>
+                            <textarea class="text-admin form-control is-invalid" id="validationTextarea" name="description" placeholder="Description" required></textarea>
+                            <input type="file" class="form-control" aria-label="file example" name="image" required>
                     </div>
                     <div class="modal-footer">
                         <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
