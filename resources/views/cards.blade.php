@@ -13,7 +13,7 @@
 <!-- Contenido -->
     <section class="container-fluid content">
         <!-- Categorías -->
-        <div class="row justify-content-center">
+      {{--   <div class="row justify-content-center">
             <div class="col-10 col-md-12">
                 <nav class="text-center my-5">
                     <a href="#" class="mx-3 pb-3 link-category d-block d-md-inline selected-category" >Todas</a>
@@ -21,7 +21,7 @@
                     <a href="#" class="mx-3 pb-3 link-category d-block d-md-inline" >Desarrollo web</a>
                 </nav>
             </div>
-        </div>
+        </div> --}}
 
         <!-- Cards -->
         <div class="row justify-content-center">

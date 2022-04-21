@@ -8,13 +8,13 @@
     <title>Document</title>
 </head>
 <body>
-    @include("layouts.navbar");
+    @include("layouts.navbar")
     
     <div class="student-title-container">
         <h3 class="student-title">PROXIMOS EVENTOS</h3>
     </div>
     
-    @include("cards");
+    @include("cards")
 
 </body>
 </html>

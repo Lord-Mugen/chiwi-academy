@@ -1,0 +1,12 @@
+.student-title-container{
+    display: flex;
+    justify-content: center;
+    background-color: #E6F0F1;
+    padding: 2em;
+}
+
+.student-title{
+    color: #FF7509;
+    font-family: 'Fredoka One', cursive;
+    font-weight: 100;
+}
