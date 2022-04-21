@@ -1,0 +1,134 @@
+:root{
+    --main-font-1: "Fredoka One"
+}
+
+body{
+    background: #006A86;
+    font-family: var(--main-font-1);
+    
+}
+
+.container{
+    margin-top: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    /* border: red solid 2px; */
+
+}
+
+h1{
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+    color: #FF7509;
+    font-size: 2.5rem;
+}
+
+.formulario{
+    /* display: flex;
+    justify-content: center; */
+    /* gap: 2rem; */
+    padding: 6px;
+    
+}
+
+
+.textmail{
+    color: white;
+    font-size: 1.5rem;
+    /* margin-left: 53px; */
+}
+
+
+input{
+    
+    border-style: none;
+    border-radius: 30px;
+    height: 30px;
+    width: 300px;
+    background: #c4c4c470;
+}
+
+   
+
+h3{
+    color: white;
+    font-size: 1.6rem;
+    display: flex;
+    justify-content: center;
+}
+
+
+.button{
+    
+    background: #FF7509;
+    margin-top: 14px;
+    font-size: 1rem;
+    width: 100px;
+    height: 40px;
+    border-radius: 30px;
+    border-style: none;
+    color: white;
+    font-family: var(--main-font-1);
+    
+   
+}
+a {
+  text-decoration: none;
+  color: black;
+}
+
+hr {
+  width: 15%;
+  border-top: 2px solid #9D9D9D;
+  margin: 0 auto;
+  margin-bottom: 2rem;
+}
+
+.bg-main {
+  background-color: #CDE4E7 !important;
+}
+
+.content {
+  background-color: #E6F0F1;
+}
+
+.selected-category {
+  border-bottom: 2px solid black;
+}
+
+.card-txt-category {
+  color: #9D9D9D;
+  font-size: 12px;
+}
+
+.card-txt-author {
+  color: #9D9D9D;
+  font-size: 14px;
+}
+
+.card-txt-date {
+  color: #9D9D9D;
+  font-size: 14px;
+}
+
+.card-img-top {
+  min-height: 200px;
+  min-width: 200px;
+}
+
+.card {
+  box-shadow: 1px 1px 5px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 1.25rem;
+}
+.card .card-img-top {
+  border-top-left-radius: calc(1.25rem - 1px);
+  border-top-right-radius: calc(1.25rem - 1px);
+}
+
+.post-txt {
+  color: #9D9D9D;
+}
