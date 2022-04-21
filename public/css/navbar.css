@@ -4,7 +4,7 @@
     padding: 0;
 }
 
-.navbar{
+.navbar-main{
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -40,7 +40,7 @@
 
 
 @media (min-width: 768px) {
-    .navbar{
+    .navbar-main{
         height: 5em;
     }
 
@@ -60,7 +60,7 @@
 }
 
 @media (min-width: 992px) {
-    .navbar{
+    .navbar-main{
         height: 6em;
     }
 
@@ -83,7 +83,7 @@
 @media (min-width: 1200px) {
     
     
-    .navbar{
+    .navbar-main{
         height: 6em;
     }
 

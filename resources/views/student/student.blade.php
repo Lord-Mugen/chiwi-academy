@@ -11,7 +11,7 @@
     @include("layouts.navbar")
     
     <div class="student-title-container">
-        <h3 class="student-title">PROXIMOS EVENTOS</h3>
+        <h3 class="student-title">PRÓXIMOS EVENTOS</h3>
     </div>
     
     @include("cards")

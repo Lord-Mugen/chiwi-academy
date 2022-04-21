@@ -11,7 +11,7 @@
 
 
 <header>
-    <nav class="navbar">
+    <nav class="navbar-main">
         <div class="navbar-logo-container">
             <a href="/" class="navbar-logo-link"><h3 class="navbar-logo">CHiWI ACÁDEMY</h3></a>
         </div>
