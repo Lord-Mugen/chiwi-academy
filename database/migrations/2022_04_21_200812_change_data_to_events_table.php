@@ -4,7 +4,7 @@ use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
 
-class Events extends Migration
+class ChangeDataToEventsTable extends Migration
 {
     /**
      * Run the migrations.
@@ -13,7 +13,10 @@ class Events extends Migration
      */
     public function up()
     {
-        //
+        Schema::table('events', function (Blueprint $table) {
+            $table->boolean('disponible')->default('1')->change();
+            $table->string('destacada')->change();
+        });
     }
 
     /**
@@ -23,6 +26,8 @@ class Events extends Migration
      */
     public function down()
     {
-        //
+        Schema::table('events', function (Blueprint $table) {
+            //
+        });
     }
 }

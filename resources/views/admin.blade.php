@@ -33,18 +33,20 @@
                     </div>
                     <div class="modal-body">
                         <!-- Formulario -->
-                        <form class="form-admin was-validated">
-                            <div class=" mb-3">
+                        <form method="post" action="{{ route('admin') }}" class="form-admin was-validated">
+                @csrf                          
+                  <div class=" mb-3">
                                 <label for="validationTextarea" class="form-label">Create an Event</label>
                             </div>
                             <textarea class="text-admin form-control is-invalid" id="validationTextarea" name="title" placeholder="Title" required></textarea>
                             <label for="timeMeet"></label>
-                            <input class type="datetime-local" name="timeMeet" required>
-                            <!-- <textarea class="text-admin form-control is-invalid" id="validationTextarea" name="timeMeet" placeholder="Date" required></textarea> -->
+                            <input  type="datetime-local" name="timeMeet" required>
                             <textarea class="text-admin form-control is-invalid" id="validationTextarea" name="maxCupos" placeholder="Participants" required></textarea>
                             <textarea class="text-admin form-control is-invalid" id="validationTextarea" name="description" placeholder="Description" required></textarea>
                             <input type="file" class="form-control" aria-label="file example" name="image" required>
-                    </div>
+                            <label for="destacada">Destacada</label>
+                  <input type="checkbox" name="destacada">
+                        </div>
                     <div class="modal-footer">
                         <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
                         <button type="submit" class="btn-admin">Save changes</button>
@@ -59,12 +61,9 @@
     </div>
 
 
-    <!-- Optional JavaScript; choose one of the two! -->
-
-    <!-- Option 1: Bootstrap Bundle with Popper -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
-
+       <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
 
 </body>
-
 </html>
+  
+     
