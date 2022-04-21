@@ -56,7 +56,7 @@
     </div>
     <div class='text'>
         <p>Have an Account?</p>
-        <a href="" class='log-text'>Log in</a>
+        <a href="/" class='log-text'>Log in</a>
     </div>
 </body>
 </html>

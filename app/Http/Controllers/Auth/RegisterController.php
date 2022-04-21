@@ -31,12 +31,14 @@ class RegisterController extends Controller
             'password' => Hash::make($request->password), //encripta contraseña
         ]);
 
+        auth()->attempt($request->only('email','password'));
+        //find the user in the database table
+
         if ($request->rol == 'estudiante') {
             return 'Estudiante view';
         }
         else {
-            // return redirect()->route('admin');
-            return 'admin view';
+            return redirect()->route('admin');
         }
     }
 }
