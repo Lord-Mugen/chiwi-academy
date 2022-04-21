@@ -7,6 +7,6 @@
     <title>Document</title>
 </head>
 <body>
-    @require("layouts.navbar")
+    @include("layouts.navbar")
 </body>
 </html>
