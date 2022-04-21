@@ -9,10 +9,12 @@
 </head>
 <body>
     @include("layouts.navbar");
-    @include("cards");
-
+    
     <div class="student-title-container">
         <h3 class="student-title">PROXIMOS EVENTOS</h3>
     </div>
+    
+    @include("cards");
+
 </body>
 </html>
