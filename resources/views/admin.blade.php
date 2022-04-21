@@ -7,6 +7,7 @@
     <title>Document</title>
 </head>
 <body>
-    Hello world
+    @include('layouts.navbar')
+    @include('cards')
 </body>
 </html>
