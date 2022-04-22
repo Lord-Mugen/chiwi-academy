@@ -18,10 +18,10 @@
 
         <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
             <div class="carousel-inner">
-              <div class="carousel-item active">
+              <div class="carousel-item active d-flex justify-content-center align-item-center">
                 <div class="col-md-4 col-12 justify-content-center mb-5">
-                    <div class="card m-auto" style="width: 40rem; height: 40rem;">
-                        <img class="card-img-top" src="{{asset('images/metodo kanban.png')}}" alt="Eventos">
+                    <div class="card m-auto " style="width: 18rem; height: 40rem;">
+                        <img class="card-img-top " src="{{asset('images/metodo kanban.png')}}" alt="Eventos">
                         <div class="card-body">
                             <small class="card-txt-category">Categoría: Talleres</small>
                             <h5 class="card-title my-2">Aprende el metodo kanban  en un dos tres</h5>
@@ -44,6 +44,7 @@
                     </div>
                 </div>
               </div>
+              
               <div class="carousel-item">
                 <div class="col-md-4 col-12 justify-content-center mb-5">
                     <div class="card m-auto" style="width: 18rem; height: 40rem;">
@@ -52,7 +53,7 @@
                             <small class="card-txt-category">Categoría: Masterclass</small>
                             <h5 class="card-title my-2">Aprende Python en un dos tres</h5>
                             <div class="d-card-text">
-                                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                Lorema ipsum dolor sit amet consectetur adipisicing elit.
                                 Sed voluptatum ab cumque quisquam quod nesciunt fugiat,
                                 eius corrupti nulla veniam, molestias nemo repudiandae?
                             </div>
