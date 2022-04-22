@@ -13,7 +13,7 @@
 <header>
     <nav class="navbar-main">
         <div class="navbar-logo-container">
-            <a href="/" class="navbar-logo-link"><h3 class="navbar-logo">CHiWI ACÁDEMY</h3></a>
+            <h3 class="navbar-logo">CHiWI ACÁDEMY</h3>
         </div>
 
         <div class="navbar-icons">

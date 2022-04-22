@@ -40,6 +40,7 @@
 
 
 @media (min-width: 768px) {
+    
     .navbar-main{
         height: 5em;
     }
@@ -60,6 +61,7 @@
 }
 
 @media (min-width: 992px) {
+   
     .navbar-main{
         height: 6em;
     }
@@ -81,7 +83,6 @@
 }
 
 @media (min-width: 1200px) {
-    
     
     .navbar-main{
         height: 6em;
