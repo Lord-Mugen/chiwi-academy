@@ -56,6 +56,7 @@
             @if ($eventos->count())
             @foreach ($eventos as $evento)
                 <div class="d-flex mb-5">
+                   {{-- inicio de card 1--}}
                     <div class="card m-auto" style="width: 18rem; height: 40rem;">
                         <img class="card-img-top" src="{{ asset('storage/images/'. $evento->image) }}" alt="Eventos">
                         <div class="card-body">
