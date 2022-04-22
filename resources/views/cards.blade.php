@@ -52,7 +52,7 @@
                             <small class="card-txt-category">Categoría: Masterclass</small>
                             <h5 class="card-title my-2">Aprende Python en un dos tres</h5>
                             <div class="d-card-text">
-                                Lorema ipsum dolor sit amet consectetur adipisicing elit.
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit.
                                 Sed voluptatum ab cumque quisquam quod nesciunt fugiat,
                                 eius corrupti nulla veniam, molestias nemo repudiandae?
                             </div>
