@@ -27,7 +27,7 @@
                     </div>
                     <div class="modal-body">
                         <!-- Formulario -->
-                        <form method="post" action="{{ route('admin') }}" class="form-admin was-validated">
+                        <form method="post" action="{{ route('admin') }}" class="form-admin was-validated" enctype="multipart/form-data">
                             @csrf                          
                             <div class=" mb-3">
                                 <label for="validationTextarea" class="form-label">Create an Event</label>
@@ -56,7 +56,7 @@
         @foreach ($eventos as $evento)
             <div class="col-md-4 col-12 justify-content-center mb-5">
                 <div class="card m-auto" style="width: 18rem; height: 40rem;">
-                    <img class="card-img-top" src="{{ $evento->image }}" alt="Eventos">
+                    <img class="card-img-top" src="{{ asset('storage/images/'. $evento->image) }}" alt="Eventos">
                     <div class="card-body">
                     <h5 class="card-title my-2"> {{ $evento->title }} </h5>
                     <h5 class="card-title my-2"> {{ $evento->maxCupos }} </h5>
@@ -80,6 +80,7 @@
     @else
         <p>No hay eventos registrados</p>
     @endif
+
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
 </body>
 </html>
