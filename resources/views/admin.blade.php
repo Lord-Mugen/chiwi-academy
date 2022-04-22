@@ -66,6 +66,13 @@
                         </div>
                         <a href="#" class="post-link"><b>Leer más</b></a>
                         <hr>
+                       <div>
+                           <form action="{{route('admin.destroy', $evento)}}" method="post">
+                               @csrf
+                               @method('DELETE')
+                               <button type="submit">Delete</button>
+                           </form>
+                       </div>
                         <div class="row">
                             <div class="col-6 text-left">
                                 <span class="card-txt-author">Chiwi Acádemy

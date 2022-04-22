@@ -13,6 +13,7 @@ Route::post('/register',[RegisterController::class,'store']);
 
 Route::get('/admin', [AdminController::class, 'index'])->name('admin');
 Route::post('/admin', [AdminController::class, 'store']);
+Route::delete('/admin/{eventos}', [AdminController::class, 'destroy'])->name('admin.destroy');
 
 Route::get('student', function () {
     return "Bienvenido a la vista de estudiante";

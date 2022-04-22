@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\Models\Events;
+use Doctrine\DBAL\Events as DBALEvents;
 
 class AdminController extends Controller
 {
@@ -30,6 +31,13 @@ class AdminController extends Controller
             //almacena la imagen en la carpeta con su respectivo nombre
             $request->file('image')->storeAs('public/images/',$imageName),
         ]);
+
+        return back();
+    }
+    
+    public function destroy(Events $eventos)
+    {
+        $eventos->delete();
 
         return back();
     }
