@@ -40,7 +40,7 @@
                             </div>
                             <textarea class="text-admin form-control is-invalid" id="validationTextarea" name="title" placeholder="Title" required></textarea>
                             <label for="timeMeet"></label>
-                            <input  type="datetime-local" name="timeMeet" required>
+                            <input class="time-for" type="datetime-local" name="timeMeet" required>
                             <textarea class="text-admin form-control is-invalid" id="validationTextarea" name="maxCupos" placeholder="Participants" required></textarea>
                             <textarea class="text-admin form-control is-invalid" id="validationTextarea" name="description" placeholder="Description" required></textarea>
                             <input type="file" class="form-control" aria-label="file example" name="image" required>
