@@ -3,13 +3,17 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use App\Models\Events;
 
 class AdminController extends Controller
 {
     public function index(){
         // dd(auth()->user()->eventos); //retorna la coleccion (items)
         // dd(auth()->user()); //verifica si esta autenticado el user
-        return view('admin');
+        $eventos = Events::get(); //obtiene la data del modelo Events
+        return view('admin',[
+            'eventos' => $eventos
+        ]);
     }
 
     public function store(Request $request){
