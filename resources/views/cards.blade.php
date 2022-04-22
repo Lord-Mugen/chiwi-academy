@@ -20,7 +20,7 @@
             <div class="carousel-inner">
               <div class="carousel-item active">
                 <div class="col-md-4 col-12 justify-content-center mb-5">
-                    <div class="card m-auto" style="width: 18rem; height: 40rem;">
+                    <div class="card m-auto" style="width: 40rem; height: 40rem;">
                         <img class="card-img-top" src="{{asset('images/metodo kanban.png')}}" alt="Eventos">
                         <div class="card-body">
                             <small class="card-txt-category">Categoría: Talleres</small>
