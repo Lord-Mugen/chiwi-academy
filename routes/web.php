@@ -22,3 +22,7 @@ Route::get('/student', function () {
 });
 
 
+/* Route::get('/student', function () {
+    return view("student.student");
+});
+ */
