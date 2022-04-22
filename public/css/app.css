@@ -1,3 +1,78 @@
+:root{
+    --main-font-1: "Fredoka One"
+}
+
+.body-login{
+    background: #006A86;
+    font-family: var(--main-font-1);
+    
+}
+
+.container-login{
+    margin-top: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+
+}
+
+.h1-login{
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+    color: #FF7509;
+    font-size: 2.5rem;
+}
+
+.formulario-login{
+
+    padding: 6px;
+    
+}
+
+
+.textmail{
+    color: white;
+    font-size: 1.5rem;
+    
+}
+
+
+.input-login{
+    
+    border-style: none;
+    border-radius: 30px;
+    height: 30px;
+    width: 300px;
+    background: #c4c4c470;
+}
+
+   
+
+.h3-login{
+    color: white;
+    font-size: 1.6rem;
+    display: flex;
+    justify-content: center;
+}
+
+
+.button-login{
+    
+    background: #FF7509;
+    margin-top: 14px;
+    font-size: 1rem;
+    width: 100px;
+    height: 40px;
+    border-radius: 30px;
+    border-style: none;
+    color: white;
+    font-family: var(--main-font-1);
+    
+
+}
 a {
   text-decoration: none;
   color: black;
@@ -54,3 +129,6 @@ hr {
 .post-txt {
   color: #9D9D9D;
 }
+
+
+
