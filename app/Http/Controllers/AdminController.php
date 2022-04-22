@@ -22,8 +22,12 @@ class AdminController extends Controller
             'timeMeet' => $request->timeMeet,
             'maxCupos' => $request->maxCupos,
             'description' => $request->description,
-            'image' => $request->image,
+            //trae el nombre original del archivo
+            'image' => $request->file('image')->getClientOriginalName(),
             'destacada' => $request->destacada,
+            $imageName = $request->file('image')->getClientOriginalName(),
+            //almacena la imagen en la carpeta con su respectivo nombre
+            $request->file('image')->storeAs('public/images/',$imageName),
         ]);
 
         return back();
