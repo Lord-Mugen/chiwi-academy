@@ -52,34 +52,37 @@
         </div>
     </div>
 
-    @if ($eventos->count())
-        @foreach ($eventos as $evento)
-            <div class="col-md-4 col-12 justify-content-center mb-5">
-                <div class="card m-auto" style="width: 18rem; height: 40rem;">
-                    <img class="card-img-top" src="{{ asset('storage/images/'. $evento->image) }}" alt="Eventos">
-                    <div class="card-body">
-                    <h5 class="card-title my-2"> {{ $evento->title }} </h5>
-                    <h5 class="card-title my-2"> {{ $evento->maxCupos }} </h5>
-                    <div class="d-card-text"> 
-                        {{ $evento->description }} 
-                    </div>
-                    <a href="#" class="post-link"><b>Leer más</b></a>
-                    <hr>
-                    <div class="row">
-                        <div class="col-6 text-left">
-                            <span class="card-txt-author">Chiwi Acádemy
-                            </span>
+    <div class="d-flex flex-wrap w-100">
+            @if ($eventos->count())
+            @foreach ($eventos as $evento)
+                <div class="d-flex mb-5">
+                    <div class="card m-auto" style="width: 18rem; height: 40rem;">
+                        <img class="card-img-top" src="{{ asset('storage/images/'. $evento->image) }}" alt="Eventos">
+                        <div class="card-body">
+                        <h5 class="card-title my-2"> {{ $evento->title }} </h5>
+                        <h5 class="card-title my-2"> {{ $evento->maxCupos }} </h5>
+                        <div class="d-card-text"> 
+                            {{ $evento->description }} 
                         </div>
-                        <div class="col-6 text-right">
-                            <span class="card-txt-date"> {{ $evento->timeMeet }} </span>
+                        <a href="#" class="post-link"><b>Leer más</b></a>
+                        <hr>
+                        <div class="row">
+                            <div class="col-6 text-left">
+                                <span class="card-txt-author">Chiwi Acádemy
+                                </span>
+                            </div>
+                            <div class="col-6 text-right">
+                                <span class="card-txt-date"> {{ $evento->timeMeet }} </span>
+                            </div>
                         </div>
                     </div>
                 </div>
-            </div>
-        @endforeach
-    @else
-        <p>No hay eventos registrados</p>
-    @endif
+                {{ $eventos->links() }}
+            @endforeach
+        @else
+            <p>No hay eventos registrados</p>
+        @endif
+    </div>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
 </body>
