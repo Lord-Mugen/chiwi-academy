@@ -20,7 +20,7 @@ class LoginController extends Controller
             return back()->with('status','email or password invalid');
         }
         else {
-            if ($request->rol == 'estudiante') {
+            if ($request->user()->rol == 'estudiante') {
                 return 'Estudiante view';
             }
             else {
