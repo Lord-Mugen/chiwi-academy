@@ -12,7 +12,7 @@ class AdminController extends Controller
         // dd(auth()->user()->eventos); //retorna la coleccion (items)
         // dd(auth()->user()); //verifica si esta autenticado el user
         $eventos = Events::get(); //obtiene la data del modelo Events
-        //$eventos = Events::paginate(1); //1 evento x pagina
+        //$eventos = Events::paginate(2); //1 evento x pagina
         return view('admin',[
             'eventos' => $eventos
         ]);
@@ -34,11 +34,23 @@ class AdminController extends Controller
 
         return back();
     }
-    
+
     public function destroy(Events $eventos)
     {
         $eventos->delete();
 
         return back();
     }
-}
+
+    public function update(Request $request, Events $eventos){
+        $eventos->title = $request->title;
+        $eventos->description = $request->description;
+        $eventos->maxCupos = $request->maxCupos;
+        $eventos->timeMeet = $request->timeMeet;
+        $eventos->destacada = $request->destacada;
+        $eventos->image = $request->file('image')->getClientOriginalName();
+
+        $eventos->save();
+        return back();
+        }
+    }
