@@ -20,4 +20,4 @@ Route::get('student', function () {
     return "Bienvenido a la vista de estudiante";
 })->name('student')->middleware('auth');
 
-Route::get('/logout', [LogoutController::class,"store"])->name('logout');
+Route::post('/logout', [LogoutController::class,"store"])->name('logout');
