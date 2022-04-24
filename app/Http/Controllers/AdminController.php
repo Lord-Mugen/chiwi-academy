@@ -34,11 +34,35 @@ class AdminController extends Controller
 
         return back();
     }
-    
+
     public function destroy(Events $eventos)
     {
         $eventos->delete();
 
         return back();
     }
+
+//    public function edit(Events $eventos){
+    //    $eventos->put();
+    // return view('edit', compact('eventos'));
+    // dd($eventos->id);
+    //    return view('edit', compact($eventos));
+
+    public function edit( $id){
+    $eventos = Events::find($id);
+    return $eventos;
+   }
+
+   public function update(Request $request, Events $eventos){
+$eventos->title = $request->title;
+$eventos->description = $request->description;
+$eventos->maxCupos = $request->maxCupos;
+$eventos->timeMeet = $request->timeMeet;
+$eventos->destacada = $request->destacada;
+$eventos->image = $request->image;
+
+$eventos->save();
+return back();
+
+ }
 }
