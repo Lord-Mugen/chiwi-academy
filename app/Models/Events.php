@@ -18,4 +18,12 @@ class Events extends Model
         'destacada',
         'disponible',
     ];
+
+    public function ownedBy(user $user){
+        return $user->id === $this->user_id;
+    }
+
+    public function user(){
+        return $this->belongsTo(User::class);
+    }
 }
