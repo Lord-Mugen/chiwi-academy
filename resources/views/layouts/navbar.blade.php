@@ -13,10 +13,10 @@
 <header>
     <nav class="navbar">
         <div class="navbar-logo-container">
-            <a href="/" class="navbar-logo-link"><h3 class="navbar-logo">CHiWI ACÁDEMY</h3></a>
+            <a class="navbar-logo-link"><h3 class="navbar-logo">CHiWI ACÁDEMY</h3></a>
         </div>
 
-        <div class="navbar-icons">
+        <div class="navbar-icons" style="display: flex; align-items: center; gap: 1rem">
             <p> {{ auth()->user()->name }} </p>
             
             <form action="{{ route('logout') }}" method="post">
