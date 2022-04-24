@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="{{asset('css/admin.css')}}" <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-    <title>Admin</title>
+    <title>CHiWI ACADEMY</title>
 </head>
 <body>
     @include('layouts.navbar')
@@ -18,8 +18,26 @@
             </button>
         @else
             <h2 style="color: #FF7509; text-align: center">Proximos Eventos</h2>
+
+            @if ($eventos->count())
+                <div style="display: flex; align-items: center">
+                    <h4 style="color: #FF7509;"> Eventos destacados </h4>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="orange" class="bi bi-star-fill" viewBox="0 0 16 16">
+                        <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+                    </svg>
+                </div>
+                @foreach ($eventos as $evento)
+                    @if ($evento->destacada === '1')
+                        <ul>
+                            <li> {{ $evento->title }} </li>
+                        </ul> 
+                    @endif
+                @endforeach
+            @endif
+
         @endif
         <!-- Modal -->
+
         <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
             <div class="modal-dialog modal-dialog-centered" role="document">
                 <div class="modal-content">
@@ -56,10 +74,10 @@
         </div>
     </div>
 
-    <div class="d-flex flex-wrap w-100">
+    <div class="d-flex flex-wrap w-100" style="justify-content: center">
             @if ($eventos->count())
             @foreach ($eventos as $evento)
-                <div class="d-flex p-4">
+                <div class="d-flex p-2">
                     <div class="card m-auto" style="width: 18rem; height: 32rem;">
                         <img class="card-img-top" style="height: 15vw; object-fit: cover" src="{{ asset('storage/images/'. $evento->image) }}" alt="Eventos">
                         <div class="card-body">
@@ -83,6 +101,15 @@
                                 <span class="card-txt-date"> {{ $evento->created_at->diffForHumans() }} </span>
                             </div>
                         </div>
+                        @if ($evento->destacada === '1')
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="orange" class="bi bi-star-fill" viewBox="0 0 16 16">
+                                <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+                            </svg>
+                        @else
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
+                                <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+                            </svg>
+                        @endif
                         @if ($evento->ownedBy(auth()->user()))
                             <div style="display: flex;">
                                 <form action="{{route('admin.destroy', $evento)}}" method="post">
