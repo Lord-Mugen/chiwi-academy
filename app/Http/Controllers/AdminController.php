@@ -49,7 +49,9 @@ class AdminController extends Controller
         $eventos->timeMeet = $request->timeMeet;
         $eventos->destacada = $request->destacada;
         $eventos->image = $request->file('image')->getClientOriginalName();
-
+        $imageName = $request->file('image')->getClientOriginalName();
+            //almacena la imagen en la carpeta con su respectivo nombre
+        $request->file('image')->storeAs('public/images/',$imageName);
         $eventos->save();
         return back();
         }
