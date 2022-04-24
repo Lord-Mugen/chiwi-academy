@@ -33,8 +33,10 @@
   @endif
   <button type="submit" class="button-login btn btn-primary">Log In</button>
 </form>
-      
-    <h3 class="h3-login" >Not a member? Sing UP </h3>
+      <div style="display: flex; align-items: center">
+        <h3 class="h3-login" >Not a member?</h3>
+        <a href="/register" style="color: #FFCB1A">Sing UP</a>
+      </div>
     </div>
 </body>
 </html>
