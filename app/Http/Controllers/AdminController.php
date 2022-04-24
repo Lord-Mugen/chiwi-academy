@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use App\Models\Events;
 use Doctrine\DBAL\Events as DBALEvents;
+use Illuminate\Support\Facades\File;
 
 class AdminController extends Controller
 {
@@ -54,12 +55,18 @@ class AdminController extends Controller
    }
 
    public function update(Request $request, Events $eventos){
+     
 $eventos->title = $request->title;
 $eventos->description = $request->description;
 $eventos->maxCupos = $request->maxCupos;
 $eventos->timeMeet = $request->timeMeet;
 $eventos->destacada = $request->destacada;
-$eventos->image = $request->image;
+$eventos->image = $request->file('image')->getClientOriginalName();
+
+
+
+
+
 
 $eventos->save();
 return back();

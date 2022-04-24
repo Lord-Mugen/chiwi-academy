@@ -109,8 +109,9 @@
                                 <input type="datetime-local" name="timeMeet" value="{{$evento->timeMeet}}" required>
                                 <textarea class="text-admin form-control is-invalid" id="validationTextarea" name="maxCupos"  required> {{$evento->maxCupos}} </textarea>
                                 <textarea class="text-admin form-control is-invalid" id="validationTextarea" name="description"  required> {{$evento->description}} </textarea>
-                                <input type="file" class="form-control" aria-label="file example" name="image" required>
-                                <label for="destacada">Destacada</label>
+                               <input type="file" class="form-control" aria-label="file example" name="image" required>
+                               
+                               <label for="destacada">Destacada</label>
                                 <input type="hidden" name="destacada" value="0">
                                 <input type="checkbox" name="destacada" value='1'>
                             </div>
