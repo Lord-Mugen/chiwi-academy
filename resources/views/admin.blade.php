@@ -66,25 +66,29 @@
                         </div>
                         <a href="#" class="post-link"><b>Leer más</b></a>
                         <hr>
-                       <div>
-                           <form action="{{route('admin.destroy', $evento)}}" method="post">
-                               @csrf
-                               @method('DELETE')
-                               <button type="submit">Delete</button>
-                           </form>
-                       </div>
+                        @if ($evento->ownedBy(auth()->user()))
+                            <div>
+                                <form action="{{route('admin.destroy', $evento)}}" method="post">
+                                    @csrf
+                                    @method('DELETE')
+                                    <button type="submit">Delete</button>
+                                </form>
+                            </div>
+                        @endif
                         <div class="row">
                             <div class="col-6 text-left">
-                                <span class="card-txt-author">Chiwi Acádemy
+                                <span class="card-txt-author"> {{ $evento->user->name }} 
                                 </span>
                             </div>
                             <div class="col-6 text-right">
-                                <span class="card-txt-date"> {{ $evento->timeMeet }} </span>
+                                <span class="card-txt-date"> {{ $evento->created_at->diffForHumans() }} </span>
                             </div>
                         </div>
                     </div>
                 </div>
-                {{ $eventos->links() }}
+                {{-- <div class="d-flex justify-content-center">
+                    {!! $eventos->links() !!}
+                </div> --}}
             @endforeach
         @else
             <p>No hay eventos registrados</p>
