@@ -12,12 +12,8 @@ Route::post('/', [LoginController::class,"login"]);
 Route::get('/register',[RegisterController::class,'index'])->name('register');
 Route::post('/register',[RegisterController::class,'store']);
 
-Route::get('/admin', [AdminController::class, 'index'])->name('admin')->middleware('auth');
-Route::post('/admin', [AdminController::class, 'store']);
-Route::delete('/admin/{eventos}', [AdminController::class, 'destroy'])->name('admin.destroy');
-
-Route::get('student', function () {
-    return "Bienvenido a la vista de estudiante";
-})->name('student')->middleware('auth');
+Route::get('/home', [AdminController::class, 'index'])->name('admin')->middleware('auth');
+Route::post('/home', [AdminController::class, 'store']);
+Route::delete('/home/{eventos}', [AdminController::class, 'destroy'])->name('admin.destroy');
 
 Route::post('/logout', [LogoutController::class,"store"])->name('logout');
