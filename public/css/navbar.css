@@ -1,0 +1,104 @@
+*{
+    margin: 0;
+    border: 0;
+    padding: 0;
+}
+
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    background-color: #006A86;
+}
+
+.navbar-logo-link{
+    text-decoration: none;
+}
+
+.navbar-logo{
+    color: #FF7509;
+    font-family: 'Fredoka One', cursive;
+    font-weight: 100;
+    padding: 1em 1em;
+}
+
+.icon-person{
+    color: #FF7509;
+    width: 2em;
+    height: 2em;
+    padding: 1em 1em;
+
+}
+
+.icon-exit{
+    color: #FF7509;
+    width: 2em;
+    height: 2em;
+    padding: 1em 1em;
+}
+
+
+@media (min-width: 768px) {
+    .navbar{
+        height: 5em;
+    }
+
+    .navbar-logo{
+        font-size: 2em;
+    }
+
+    .icon-person{
+        width: 3em;
+        height: 3em;
+    }
+    
+    .icon-exit{
+        width: 3em;
+        height: 3em;
+    }
+}
+
+@media (min-width: 992px) {
+    .navbar{
+        height: 6em;
+    }
+
+    .navbar-logo{
+        font-size: 2.7em;
+    }
+
+    .icon-person{
+        width: 4em;
+        height: 4em;
+    }
+    
+    .icon-exit{
+        width: 4em;
+        height: 4em;
+        padding-left: 2em;
+    }
+}
+
+@media (min-width: 1200px) {
+    
+    
+    .navbar{
+        height: 6em;
+    }
+
+    .navbar-logo{
+        font-size: 2.7em;
+    }
+
+    .icon-person{
+        width: 4em;
+        height: 4em;
+    }
+    
+    .icon-exit{
+        width: 4em;
+        height: 4em;
+        padding-left: 2em;
+    }
+}
