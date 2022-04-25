@@ -23,7 +23,7 @@ Los usuarios podrán ver la descripción de un evento, apuntarse y desapuntarse.
     <li>Laravel</li>
 </ul>  
   
-<h1>Autores</h1> :technologist:
+<h1>Autores :technologist:</h1>
 <ul>
     <li>Christian Ruiz</li>
     <li>María José Alba</li>
