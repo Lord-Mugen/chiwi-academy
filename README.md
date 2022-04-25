@@ -1,3 +1,76 @@
+CHIWI ACADEMY  
+Diseñar y desarrollar una aplicación para la gestión de eventos o meetups on-line.  
+Un colectivo de desarrollo de software quiere crear una aplicación web para gestionar sus eventos online como talleres, masterclass o webinars.
+
+Los usuarios podrán ver la descripción de un evento, apuntarse y desapuntarse. Podrán ver la lista de los eventos a los que se han apuntado. El administrador debe tener las herramientas para la gestión (CRUD) de los eventos.
+
+![REGISTER](https://user-images.githubusercontent.com/97619450/165000473-d8004db6-778f-4105-b44a-663c002c3251.png)
+
+
+
+![LOGIN](https://user-images.githubusercontent.com/97619450/165000551-8ad6653e-b788-409e-b7d0-ba78ff83138a.png)
+
+
+
+![newss](https://user-images.githubusercontent.com/97619450/165000618-24036975-fb8c-4a8c-88ba-c615b2b153b3.png)
+
+
+![photo1650841574](https://user-images.githubusercontent.com/97619450/165000580-c14c7aff-e119-493c-a254-9b5a867c4d13.jpeg)
+
+
+
+
+LIBRERIAS  :book:  
+Bootstrap
+
+CONSTRUIDO CON  :hammer_and_wrench:    
+Laravel  
+  
+  
+AUTORES  :technologist:   
+Christian Ruiz  
+Maria José Alba  
+Jocelyn Rincón   
+Emmanuel Estupiñán  
+Cristian Montoya  
+
+   
+   
+
+DEPLOY  :desktop_computer:  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 <p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400"></a></p>
 
 <p align="center">
