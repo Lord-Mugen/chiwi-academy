@@ -1,4 +1,5 @@
-CHIWI ACADEMY  
+<h1>🏫CHIWI ACADEMY🏫</h1>
+  
 Diseñar y desarrollar una aplicación para la gestión de eventos o meetups on-line.  
 Un colectivo de desarrollo de software quiere crear una aplicación web para gestionar sus eventos online como talleres, masterclass o webinars.
 
@@ -6,38 +7,35 @@ Los usuarios podrán ver la descripción de un evento, apuntarse y desapuntarse.
 
 ![REGISTER](https://user-images.githubusercontent.com/97619450/165000473-d8004db6-778f-4105-b44a-663c002c3251.png)
 
-
-
 ![LOGIN](https://user-images.githubusercontent.com/97619450/165000551-8ad6653e-b788-409e-b7d0-ba78ff83138a.png)
-
-
 
 ![newss](https://user-images.githubusercontent.com/97619450/165000618-24036975-fb8c-4a8c-88ba-c615b2b153b3.png)
 
-
 ![photo1650841574](https://user-images.githubusercontent.com/97619450/165000580-c14c7aff-e119-493c-a254-9b5a867c4d13.jpeg)
 
+<h1>Librerias 📕</h1>
+<ul>
+    <li>Bootstrap</li>
+</ul>
 
-
-
-LIBRERIAS  :book:  
-Bootstrap
-
-CONSTRUIDO CON  :hammer_and_wrench:    
-Laravel  
+<h1>Construido con 🔧</h1>  
+<ul>
+    <li>Laravel</li>
+</ul>  
   
-  
-AUTORES  :technologist:   
-Christian Ruiz  
-Maria José Alba  
-Jocelyn Rincón   
-Emmanuel Estupiñán  
-Cristian Montoya  
+<h1>Autores</h1> :technologist:
+<ul>
+    <li>Christian Ruiz</li>
+    <li>María José Alba</li>
+    <li>Jocelyn Rincón</li>
+    <li>Emmanuel Estupiñán</li>
+    <li>Cristian Montoya</li>
+</ul>
 
-   
-   
-
-DEPLOY  :desktop_computer:  
+<h1>Deploy 🖥️</h1>
+<ul>
+    <li>http://safe-forest-97695.herokuapp.com/</li>
+</ul>  
 
 
 
